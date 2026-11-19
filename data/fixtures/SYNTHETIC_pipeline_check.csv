@@ -1,0 +1,5 @@
+id,question,answer,topic,difficulty
+001,[DỮ LIỆU GIẢ] Placeholder A,PLACEHOLDER_ALPHA,fixture,dễ
+002,[DỮ LIỆU GIẢ] PLACEHOLDER   A,PLACEHOLDER_ALPHA,fixture,trung bình
+003,[DỮ LIỆU GIẢ] Placeholder B,,fixture,khó
+004,[DỮ LIỆU GIẢ] Placeholder C,PLACEHOLDER_BETA,fixture,không hợp lệ

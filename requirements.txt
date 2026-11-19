@@ -1,0 +1,10 @@
+torch>=2.3
+transformers==4.57.1
+accelerate
+bitsandbytes
+huggingface_hub
+filelock
+pandas
+numpy
+matplotlib
+PyYAML

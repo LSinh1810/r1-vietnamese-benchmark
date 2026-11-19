@@ -1,0 +1,47 @@
+# Cấu hình dự kiến. Khóa các giá trị còn trống sau pilot và trước khi chạy test.
+dataset:
+  directory: data
+  path: null
+  pilot_questions: 40
+  test_questions: 300
+  version: null
+
+models:
+  - id: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+    size: 1.5B
+    model_revision: null
+    tokenizer_revision: null
+    enabled: true
+  - id: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+    size: 7B
+    model_revision: null
+    tokenizer_revision: null
+    enabled: true
+  - id: deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+    size: 14B
+    model_revision: null
+    tokenizer_revision: null
+    enabled: false
+
+inference:
+  dtype: null
+  batch_size: 1
+  quantization: null
+  do_sample: true
+  temperature: 0.6
+  top_p: 0.95
+  max_new_tokens: null
+  seeds: null
+  generations_per_question: 3
+
+prompt:
+  language: vi
+  system_message: null
+  template_version: vi-v1
+  user_template: |-
+    Giải bài toán sau. Ở dòng cuối, ghi đáp án theo định dạng "Đáp án: ...".
+
+    {question}
+
+output:
+  directory: results
